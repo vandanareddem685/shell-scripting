@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo "Ramesh:Hi Suresh, Good MOrning"
-echo "Suresh:Hi Ramesh, very Good morning"
-echo "Ramesh:How are you Suresh"
-echo "Suresh:I Am good Ramesh"
+PERSON1=Ramesh
+PERSON2=Suresh
+
+echo "$PERSON1:Hi $PERSON2, Good MOrning"
+echo "$PERSON2:Hi $PERSON1, very Good morning"
+echo "$PERSON1:How are you $PERSON2"
+echo "$PERSON2:I Am good $PERSON1"
