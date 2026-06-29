@@ -16,3 +16,4 @@ then
    echo "ERROR:Installing MYSQL is failed"
 else
    echo "Installing MYSQL is success"
+fi
