@@ -23,5 +23,5 @@ yum install mysql -y
 
 VALIDATE
 
-yum insatll git -y
+yum install git -y
 VALIDATE
