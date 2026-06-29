@@ -22,3 +22,6 @@ fi
 yum install mysql -y
 
 VALIDATE
+
+yum insatll git -y
+VALIDATE
