@@ -6,9 +6,9 @@ N="\e[0m"
 
 SOURCE_DIR="/tmp/shellscript-logs"
 
-if [ ! d "$SOURCE_DIR" ]
+if [ ! d $SOURCE_DIR ]
 then
-   echo "$R Source diretory $SOURCE_DIR doesn't exists $N"
+   echo -e "$R Source diretory $SOURCE_DIR doesn't exists $N"
 fi
 
 FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +14 -name "*.logs")
