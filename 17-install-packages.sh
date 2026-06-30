@@ -19,6 +19,7 @@ VALIDATE(){
     else
        echo -e "$G $2 is success $N"
     fi
+}
 
 if [ $ID -ne 0 ]
 then
