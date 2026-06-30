@@ -1,10 +1,10 @@
 #!/bin/bash
 
+SOURCE_DIR="/tmp/shellscript-logs"
+
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-
-SOURCE_DIR="/tmp/shellscript-logs"
 
 if [ ! -d $SOURCE_DIR ]
 then
@@ -15,7 +15,8 @@ FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +14 -name "*.logs")
 
 
 while IFS= read -r line
-    do
+do
      echo "Deleting line: $line"
+    
      rm -rf $line
-    done <<< $FILES_TO_DELETE
+done <<< $FILES_TO_DELETE
