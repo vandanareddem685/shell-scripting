@@ -10,7 +10,7 @@ touch example.txt
 
 echo "Before wrong command"
 
-ls -l
+lsfff
 
 echo "After wrong command"
 
