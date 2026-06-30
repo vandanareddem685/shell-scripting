@@ -29,6 +29,7 @@ fi
 
 for package in $@
 do
+
   yum list installed $package
   if [ $? -ne 0 ]
   then
@@ -37,4 +38,5 @@ do
   else
     echo "$package already installed $Y SKIPPING $N"
   fi
+
 done
