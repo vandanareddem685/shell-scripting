@@ -13,4 +13,4 @@ do
   echo "Username is: $username"
   echo "Passwd is: $password"
   echo "user_id is: $user_id"
-done <<< $file
+done < $file
