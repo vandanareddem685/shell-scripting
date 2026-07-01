@@ -13,4 +13,8 @@ do
   echo "Username is: $username"
   echo "Passwd is: $password"
   echo "user_id is: $user_id"
+  echo "group_id is: $group_id"
+  echo "user_fullname is: $user_fullname"
+  echo "home_dir is $home_dir"
+  echo "bash_path is $bash_path"
 done < $file
