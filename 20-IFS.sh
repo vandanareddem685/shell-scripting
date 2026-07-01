@@ -7,7 +7,7 @@ then
    echo "Source file $file doesn't exists"
 fi
 
-while IFs=":" read -r username password user_id group_id user_fullname home_dir bash_path
+while IFS=":" read -r username password user_id group_id user_fullname home_dir bash_path
 
 do
   echo "Username is: $username"
