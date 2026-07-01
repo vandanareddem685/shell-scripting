@@ -17,4 +17,5 @@ do
   echo "user_fullname is: $user_fullname"
   echo "home_dir is $home_dir"
   echo "bash_path is $bash_path"
-done < $file
+
+done <$file
