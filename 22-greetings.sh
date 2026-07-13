@@ -1,5 +1,8 @@
 #!/bin/bash
 
+NAME=""
+WISHES=""
+
 USAGE(){
     echo "USGAE:: $(basename $0) -n <name> -w <wishes>"
     echo "Options::"
@@ -8,18 +11,13 @@ USAGE(){
     echo " -h, Display Help and exit"
 }
 
-while getopts "n:a:" opt
-do
+while getopts ":n:w:h" opt; do
     case $opt in
-        n)
-            echo "Name: $OPTARG"
-            ;;
-        a)
-            echo "Age: $OPTARG"
-            ;;
-        *)
-            echo "Usage: $0 -n <name> -a <age>"
-            ;;
+        n) NAME="$OPTARG";;
+        w) WISHES="$OPTARG";;
+        \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;;
+        :) USAGE; exit;;
+        h) USAGE; exit;;
     esac
 done
 
