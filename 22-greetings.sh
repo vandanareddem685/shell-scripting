@@ -23,9 +23,9 @@ done
 
 #if [ -z "$NAME" ] || [ -z "$WISHES" ] ; then # now wishes is optional
     #echo "ERROR: Both -n and -w are mandatory options."
-if [ -z "$NAME" ] ;
+if [ -z "$NAME" ]; then # now wishes is optional
     echo "ERROR: -n is mandatory."
-    USAGE;
+    USAGE
     exit 1
 fi
 
