@@ -1,6 +1,16 @@
 #!/bin/bash
 
-PERSON=$1
-
-echo "Hello $PERSON, Good Morning I am learning shell script"
-
+while getopts "n:a:" opt
+do
+    case $opt in
+        n)
+            echo "Name: $OPTARG"
+            ;;
+        a)
+            echo "Age: $OPTARG"
+            ;;
+        *)
+            echo "Usage: $0 -n <name> -a <age>"
+            ;;
+    esac
+done
