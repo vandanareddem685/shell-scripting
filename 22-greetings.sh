@@ -14,3 +14,12 @@ do
             ;;
     esac
 done
+
+if [ -z "$NAME" ] | [ -z "$WISHES" ] ; then # now wishes is optional
+    #echo "ERROR: Both -n and -w are mandatory options."
+    echo "ERROR: -n is mandatory."
+    USAGE
+    exit 1
+fi
+
+echo "Hello $NAME. $WISHES. I have been learning Shell Script."
