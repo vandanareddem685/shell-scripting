@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NAME=""
-WISHES=""
+WISHES="Good Morning"
 
 USAGE(){
     echo "USGAE:: $(basename $0) -n <name> -w <wishes>"
@@ -21,10 +21,10 @@ while getopts ":n:w:h" opt; do
     esac
 done
 
-if [ -z "$NAME" ] | [ -z "$WISHES" ] ; then # now wishes is optional
+#if [ -z "$NAME" ] || [ -z "$WISHES" ] ; then # now wishes is optional
     #echo "ERROR: Both -n and -w are mandatory options."
+    if [ -z "$NAME" ] ;
     echo "ERROR: -n is mandatory."
-    echo "ERROR: -w is mandatory."
     USAGE;
     exit 1
 fi
